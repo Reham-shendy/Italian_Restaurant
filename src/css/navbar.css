@@ -1,0 +1,56 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+  background-color: transparent;
+}
+.nav-bar .container {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  color: #e7e9e2;
+  justify-content: space-between;
+}
+.nav-bar.scrolled {
+  background-color: #cfd2c6;
+}
+.nav-bar.scrolled .container {
+  color: #36392d;
+}
+.nav-bar .container ul {
+  display: flex;
+  gap: 60px;
+  font-family: "roboto";
+  font-size: 1rem;
+}
+.nav-bar .title {
+  font-size: 1.5rem;
+}
+.nav-bar .container ul li {
+  transition: color var(--transition-duration);
+}
+.nav-bar .container ul li:hover {
+  color: red;
+}
+.landing-page {
+  height: 100vh;
+  position: relative;
+}
+.landing-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.slogan {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: #cfd2c6;
+  line-height: 1.2;
+  font-family: "Abril Fatface";
+  font-size: 3.8rem;
+}

@@ -1,0 +1,199 @@
+.about-us {
+  background-color: #cfd2c6;
+  padding-top: 100px;
+}
+/* .about-us .container {
+  height: 300vh;
+} */
+.about-us .container .details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  gap: 50px;
+  padding: 60px;
+}
+.about-us .details .left {
+  color: #36392d;
+  font-size: 2.7rem;
+  font-family: "Abril Fatface";
+}
+.about-us .details .right {
+  color: #36392d;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 400px;
+}
+.about-us .arrows {
+  padding-left: 100px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.about-us .arrows button,
+.menu .menu-gallary button {
+  background-color: transparent;
+  color: #36392d;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 1px solid #36392d;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.about-us .container .gallary {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.about-us .container .gallary > img {
+  width: 550px;
+  height: 335px;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+/* start menu */
+.menu .menu-title {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-family: "Abril Fatface";
+  color: #36392d;
+}
+.menu .menu-description {
+  width: 450px;
+  text-align: center;
+  font-family: "roboto";
+  margin: auto;
+  color: #36392d;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-bottom: 80px;
+}
+.menu .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.menu .buttons button {
+  background-color: transparent;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-family: "roboto";
+  border: 2px solid #b7bca9;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.menu .buttons .category.active {
+  background-color: #b7bca9;
+}
+/* menu gallary  */
+.menu .menu-gallary {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.menu .menu-gallary .menu-right-btn {
+  margin-left: 30px;
+}
+.menu .menu-gallary .menu-left-btn {
+  margin-right: 30px;
+}
+.menu .menu-gallary .menu-cards {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.menu .menu-gallary .menu-cards .card {
+  display: inline-block;
+  color: #36392d;
+}
+.menu .menu-gallary .menu-cards .card img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.menu .menu-gallary .menu-cards .card .item-title {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 1rem;
+}
+.menu .menu-gallary .menu-cards .card .item-price {
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.drinks {
+  display: flex;
+  padding-bottom: 80px;
+  position: relative;
+}
+.drinks .drink-card {
+  display: none;
+}
+.drinks .drink-card.show {
+  display: block;
+}
+.drinks .drink-card img {
+  width: 400px;
+  height: 600px;
+  margin-right: 40px;
+}
+.drinks .drink-card .drink-name,
+.drinks .drink-card .drink-price {
+  font-weight: bold;
+  font-family: "roboto";
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.drinks .drink-arrows {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 20%;
+  left: 33%;
+}
+.drinks .drink-arrows button {
+  background-color: transparent;
+  color: #36392d;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 1px solid #36392d;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.drink-types {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  font-family: "Abril Fatface";
+  color: #36392d;
+}
+.drink-types p {
+  color: #9fa68c;
+  width: 370px;
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #9fa68c;
+}
+.drink-types p.active {
+  color: #36392d;
+}
