@@ -30,22 +30,24 @@
       rel="stylesheet"
     />
 
-    <script type="module" src="src/JS/script.js" defer></script>
+    <script type="module" src="src/JS/script.js"></script>
   </head>
   <body>
     <div class="nav-bar">
       <div class="container" id="nav-container">
         <ul class="left-links">
-          <li>
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          <li class="menu-toggle">
+            <a href="#">
+              <i class="fa-solid fa-bars"></i>
+            </a>
           </li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Team</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#team">Team</a></li>
         </ul>
         <h1 class="title">Cibo gustoso</h1>
         <ul class="right-links">
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="#">En</a></li>
         </ul>
       </div>
@@ -84,7 +86,7 @@
           <img src="./src/assets/about5.png" alt="gallary-image" />
           <img src="./src/assets/about6.png" alt="gallary-image" />
         </div>
-        <div class="menu">
+        <div class="menu" id="menu">
           <h2 class="menu-title">Menu</h2>
           <p class="menu-description">
             Lacus lobortis nullam nam consectetur fermentum mattis pellentesque
@@ -181,9 +183,89 @@
             <div class="drink-types">
               <p class="">Fresh</p>
               <p class="">Cocktails</p>
-              <p class="">Soda</p>
+              <p class="">Lemonad</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="team" id="team">
+      <div class="container">
+        <div class="text">
+          <h2>Our Team</h2>
+          <p>
+            In velit auctor non auctor in. Id pellentesque facilisis at lectus
+            sed in sit tellus mauris.
+          </p>
+        </div>
+        <div class="team-cards">
+          <div class="team-card">
+            <img src="./src/assets/team1.png" alt="" />
+            <p class="name">Johnathan Demario</p>
+            <p class="role">Founder</p>
+            <p class="job-description">
+              In velit auctor non auctor in. Id pellentesque facilisis at lectus
+              sed in sit tellus mauris.
+            </p>
+          </div>
+          <div class="team-card">
+            <img src="./src/assets/team2.png" alt="" />
+            <p class="name">Bryan Machado</p>
+            <p class="role">Chef</p>
+            <p class="job-description">
+              Duis sed ut dolor viverra porttitor semper et faucibus facilisis.
+              Hac maecenas rhoncus.
+            </p>
+          </div>
+          <div class="team-card">
+            <img src="./src/assets/team3.png" alt="" />
+            <p class="name">Adam Joseph</p>
+            <p class="role">Chef</p>
+            <p class="job-description">
+              Faucibus sed vitae dui justo duis in. Egestas ipsum ut a elementum
+              at laoreet at quam vitae.
+            </p>
+          </div>
+          <div class="team-card">
+            <img src="./src/assets/team4.png" alt="" />
+            <p class="name">Putin Desque</p>
+            <p class="role">Chef</p>
+            <p class="job-description">
+              Molestie viverra mattis nisl vitae orci feugiat in. Aliquet quis
+              orci turpis aliquet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="events" id="events">
+      <div class="container">
+        <h2>Events</h2>
+        <div class="events-gallary">
+          <div class="event-img">
+            <img src="./src/assets/event1.png" alt="" />
+          </div>
+
+          <div class="event-img">
+            <img src="./src/assets/event2.png" alt="" />
+          </div>
+          <div class="event-img">
+            <img src="./src/assets/event3.png" alt="" />
+          </div>
+          <div class="event-img">
+            <img src="./src/assets/event4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" id="contact">
+      <div class="container">
+        <p class="logo">Cibo gustoso</p>
+        <div class="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
         </div>
       </div>
     </div>

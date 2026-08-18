@@ -1,0 +1,135 @@
+.team {
+  background-color: #b7bca9;
+  padding-top: 150px;
+}
+.team .text {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+.team .text h2 {
+  color: #36392d;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Abril Fatface";
+}
+.team .text p {
+  color: #36392d;
+  width: 400px;
+  font-size: 1.1rem;
+}
+.team .team-cards {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 150px;
+}
+.team .team-cards .team-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+.team .team-cards .team-card img {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+}
+.team .team-cards .team-card p {
+  font-family: "roboto";
+  margin-top: 10px;
+  text-align: center;
+  color: #36392d;
+}
+.team .team-cards .team-card .name {
+  font-weight: bold;
+}
+
+/* ========================================
+   RESPONSIVE - MEDIUM SCREENS
+======================================== */
+
+@media (max-width: 1199px) {
+  .team {
+    padding-top: 100px;
+  }
+
+  .team .text {
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .team .text h2 {
+    font-size: 2.5rem;
+  }
+
+  .team .text p {
+    width: 350px;
+    font-size: 1rem;
+  }
+
+  .team .team-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 25px;
+    padding-bottom: 100px;
+  }
+
+  .team .team-cards .team-card {
+    width: 100%;
+  }
+
+  .team .team-cards .team-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - SMALL SCREENS
+======================================== */
+
+@media (max-width: 767px) {
+  .team {
+    padding-top: 80px;
+  }
+
+  .team .text {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .team .text h2 {
+    font-size: 2.2rem;
+  }
+
+  .team .text p {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .team .team-cards {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 80px;
+  }
+
+  .team .team-cards .team-card {
+    width: 100%;
+  }
+
+  .team .team-cards .team-card img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+  }
+
+  .team .team-cards .team-card p {
+    font-size: 0.95rem;
+  }
+}

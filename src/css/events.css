@@ -1,0 +1,160 @@
+.events {
+  background-color: #cfd2c6;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.events h2 {
+  color: #36392d;
+  font-family: "Abril Fatface";
+  padding-bottom: 80px;
+  font-size: 2.5rem;
+  padding-left: 80px;
+}
+
+.events-gallary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.events-gallary .event-img {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.events-gallary .event-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.events-gallary .event-img::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  /* background-color: #b7bca9; */
+  background-color: rgb(183 188 169 / 60%);
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+.events-gallary .event-img:hover:after {
+  opacity: 1;
+}
+
+.events-gallary .event-img::before {
+  position: absolute;
+  content: "Corborate Events";
+  color: #36392d;
+  font-weight: bold;
+  font-family: "roboto";
+  font-size: 1.2rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+.events-gallary .event-img:hover::before {
+  opacity: 1;
+}
+
+.footer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b7bca9;
+  color: #36392d;
+}
+.footer .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Abril Fatface";
+}
+.footer .social {
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+  font-size: 1.3rem;
+  margin-top: 50px;
+}
+.footer .social i {
+  transition: color 0.3s;
+}
+.footer .social i:hover {
+  color: #6c7359;
+}
+
+/* ========================================
+   RESPONSIVE - MEDIUM SCREENS
+======================================== */
+
+@media (max-width: 1199px) {
+  .events {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .events h2 {
+    padding-bottom: 60px;
+    padding-left: 30px;
+    font-size: 2.2rem;
+  }
+
+  .events-gallary {
+    gap: 25px;
+  }
+
+  .events-gallary .event-img {
+    height: 330px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - SMALL SCREENS
+======================================== */
+
+@media (max-width: 767px) {
+  .events {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .events h2 {
+    padding-bottom: 40px;
+    padding-left: 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .events-gallary {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .events-gallary .event-img {
+    height: 300px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - FOOTER
+======================================== */
+
+@media (max-width: 767px) {
+  .footer {
+    height: 180px;
+  }
+
+  .footer .logo {
+    font-size: 1.3rem;
+  }
+
+  .footer .social {
+    gap: 15px;
+    font-size: 1.1rem;
+    margin-top: 30px;
+  }
+}

@@ -56,49 +56,35 @@ categoryButtons.forEach((button) => {
   });
 });
 
-/////////repeat it again ////////////
+// scrolling across drinks
 const drinkCards = document.querySelectorAll(".drink-card");
 const drinkTypes = document.querySelectorAll(".drink-types p");
-
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
 
 let currentIndex = 0;
 
-function updateDrink() {
-  // Remove classes from all cards and paragraphs
+function updateDrinkCard() {
   drinkCards.forEach((card) => {
     card.classList.remove("show");
   });
-
   drinkTypes.forEach((type) => {
     type.classList.remove("active");
   });
 
-  // Add classes to the current items
   drinkCards[currentIndex].classList.add("show");
   drinkTypes[currentIndex].classList.add("active");
 }
 
 rightArrow.addEventListener("click", () => {
   currentIndex++;
-
-  if (currentIndex >= drinkCards.length) {
-    currentIndex = 0;
-  }
-
-  updateDrink();
+  if (currentIndex >= drinkCards.length) currentIndex = 0;
+  updateDrinkCard();
 });
-
 leftArrow.addEventListener("click", () => {
   currentIndex--;
-
-  if (currentIndex < 0) {
-    currentIndex = drinkCards.length - 1;
-  }
-
-  updateDrink();
+  if (currentIndex < 0) currentIndex = drinkCards.length - 1;
+  updateDrinkCard();
 });
 
-// Set the initial state
-updateDrink();
+updateDrinkCard();
